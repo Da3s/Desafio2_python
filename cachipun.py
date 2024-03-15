@@ -16,6 +16,7 @@ elif opcion_usuario == 'Tijera':
     opcion_usuario = 'Tijera'
 else :
     print('Argumento inválido: Debe ser Piedra, Papel o Tijera')
+    
 
 # Seleccion pc
 
@@ -42,6 +43,14 @@ elif opcion_usuario == 'Tijera' and opcion_computador == 'Piedra':
     print('Perdiste!!!')
 elif opcion_usuario == 'Tijera' and opcion_computador == 'Papel':
     print('Ganaste!!!')
-else:
+elif opcion_usuario == 'Tijera' and opcion_computador == 'Tijera':
     print('Empate')
+elif opcion_usuario == 'Papel' and opcion_computador == 'Papel':
+    print('Empate')
+elif opcion_usuario == 'Piedra' and opcion_computador == 'Piedra':
+    print('Empate')
+else:
+    print('Argumento inválido: Debe ser Piedra, Papel o Tijera')
     
+# PD no supe como hacer que solo muestre el mensaje de error al ingresar cualquier dato erroneo,
+# Estuve leyendo sobre el break pero no me funciono :(
